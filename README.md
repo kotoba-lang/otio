@@ -1,2 +1,14 @@
-# otio
-KAMI clj-wgsl migration Phase 4 home (ADR-2607010930) — scaffold, Wave-2 port lands here
+# kotoba-lang/otio
+
+OpenTimelineIO builders and JSON emitter.
+
+Namespaces:
+
+- `otio.core`
+- `kotoba.otio`
+
+## Test
+
+```sh
+clojure -M:test
+```
