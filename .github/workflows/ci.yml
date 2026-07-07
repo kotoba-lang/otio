@@ -34,4 +34,5 @@ jobs:
           key: ${{ runner.os }}-jdk${{ matrix.java }}-clj-${{ hashFiles('deps.edn') }}
           restore-keys: |
             ${{ runner.os }}-jdk${{ matrix.java }}-clj-
+      - run: git clone --depth 1 https://github.com/kotoba-lang/json.git ../json
       - run: clojure -M:test
