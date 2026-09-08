@@ -3,7 +3,7 @@
    object model (OTIO_SCHEMA tags, RationalTime/TimeRange wrapping, Stack/Track/Clip nesting) and that
    `otio` serializes it to JSON. otiocat round-trips the same output for real in `bb gate`."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kotoba.otio :as o]))
 
 (deftest builders
