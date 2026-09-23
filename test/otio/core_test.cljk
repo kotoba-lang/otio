@@ -2,7 +2,7 @@
   "Golden tests for kotoba.otio — the OpenTimelineIO hiccup. They pin that the builders produce the OTIO
    object model (OTIO_SCHEMA tags, RationalTime/TimeRange wrapping, Stack/Track/Clip nesting) and that
    `otio` serializes it to JSON. otiocat round-trips the same output for real in `kbb -M:gate`."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [kotoba.otio :as o]))
 
